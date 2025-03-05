@@ -42,8 +42,8 @@ function sendMail(event) {
         subject: form["subject"].value,
         message: form["message"].value
     };
-
-    emailjs.send("service_f508cri", "template_2mzq9xp", parms)
+    
+    emailjs.send("service_tsut9y1","template_9bniymh", parms)
         .then(() => {
             alert("Il tuo messaggio è stato inviato con successo!");
             form.reset();
