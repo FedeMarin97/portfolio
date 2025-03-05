@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <title>Federica Marino - Contatti</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favi.ico?">
+
+  <meta property="og:title" content="Contattami">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="contatti.html">
+  <meta property="og:site_name" content="Federica Marino">
+  <meta property="og:locale" content="it_IT">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init("s4ZdtehuovNGyKnUD");
+    })();
+  </script>
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">FM</a>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="index.html" class="active">About me</a>
+      <a href="index.html" class="active">Portfolio</a>
+      <a href="contatti.html" class="active">Contacts</a>
+    </nav>
+  </header>
+  <section class="contact" id="contact">
+    <h2><span>Contact Me</span></h2>
+    <h3>If you want more information or are interested in collaborating, fill out the form below.</h3>
+    <form id="contact-form" class="contact-form" onsubmit="sendMail(event)">
+        <div class="input-box">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+        </div>
+        <div class="input-box">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div class="input-box">
+            <input type="text" id="subject" name="subject" placeholder="Object" required>
+        </div>
+        <div class="input-box">
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+        </div>
+        <div class="input-box">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+  </section>
+  <footer class="footer">
+    <div class="footer-text">
+      <p>All rights reserved to Federica Marino</p>
+    </div>
+    <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/federica-marino-2778551b6/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.behance.net/federicamarino5" target="_blank"><i class="fa-brands fa-behance"></i></a>
+    </div>
+  </footer>
+  <script src="assets/javascript/index.js"></script>
+</body>
+</html>
