@@ -43,6 +43,7 @@ function sendMail(event) {
         message: form["message"].value
     };
     
+    
     emailjs.send("service_tsut9y1","template_9bniymh", parms)
         .then(() => {
             alert("Il tuo messaggio è stato inviato con successo!");
